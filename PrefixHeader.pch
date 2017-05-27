@@ -1,0 +1,76 @@
+//
+//  PrefixHeader.pch
+//  点家慧2.0
+//
+//  Created by app on 17/5/10.
+//  Copyright © 2017年 inwhoop.com. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//注册 & 登陆View
+#import "Register_ViewController.h"
+#import "Login_viewController.h"
+
+
+#import "Base__ViewController.h"
+#import "YuLe__ViewController.h"
+#import "help__ViewController.h"
+#import "UIView+Frame.h"
+#import "RoomDetialView.h"
+#import "PerfectRoomDetail.h"
+#import "RoomDetailDisplay.h"
+
+#import "AppDelegate.h"
+
+#import "DT_searchDetailView.h"
+#import "DT_kindOfSelectButton.h"
+#import "hot_attentionRoom_Btn.h"
+
+
+#import "DT_scrollview_show_tableview.h"
+
+#import "DT_Hot_tableview.h"
+#import "hot_tableView_cell.h"
+
+#import "DT_attention_tableView.h"
+#import "Attention_tableView_cell.h"
+
+#import "DT_meTable_cell.h"
+#import "room_display.h"
+#import "DT_mangeRoom.h"
+
+#import "DT_mangeTableviewCell.h"
+
+//三种发布房间
+#import "DT_pushVideoVC.h"
+#import "DT_pushPictureVC.h"
+#import "DT_pushTextVC.h"
+
+
+#import "DT_display_tableView.h"
+#import "DT_display_tableView_cell.h"
+#import "DT_chat_tableView.h"
+//房间详情&三种类型的tableviewcell
+#import "kind_of_room_VC.h"
+#import "DT_picture_room_cell.h"
+#import "DT_text_room_cell.h"
+// 视频-第三方插件zxPlayer
+#import "VideoPlayViewController.h"
+
+//医疗
+#import "DT_doctor_help_VC.h"
+#import "DT_scroller_picture.h"
+
+
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+#define  applicationWidth [UIScreen mainScreen].bounds.size.width
+#define  applicationHeight [UIScreen mainScreen].bounds.size.height
+
+#define iPhone5Width applicationWidth/320/2
+#define iPhone5Height applicationHeight/568/2
+#endif /* PrefixHeader_pch */
